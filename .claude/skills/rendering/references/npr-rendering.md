@@ -36,7 +36,3 @@ Warm rim color for stylized characters
 - Bloom ON for emissive accents
 - Screen Space Reflections OFF (breaks toon)
 - Shadow mode: Half/Li-Sun for hard shadows
-
-## Stylized Style Integration
-
-Coordinate with stylized-style skill for palette and exaggeration levels.

@@ -120,7 +120,7 @@ Before retopo handoff provide:
 - Match detail level to camera distance
 
 ### MUST NOT DO
-- Sculpt lowpoly-style assets
+- Sculpt lowpoly assets
 - Skip retopology for animated game characters
 - Subdivide entire mesh to level 6+ uniformly
 - Leave dyntopo mesh as final game asset

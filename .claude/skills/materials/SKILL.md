@@ -85,7 +85,7 @@ Instance variations: duplicate master, adjust parameters only.
 
 ## Stylized Materials
 
-See stylized-style skill. Key differences:
+Key differences:
 - Flatten roughness range
 - Hand-painted base color priority
 - Rim light via Fresnel mix

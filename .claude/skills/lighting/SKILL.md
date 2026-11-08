@@ -8,7 +8,7 @@ metadata:
   domain: blender
   role: specialist
   triggers: lighting, light, HDRI, three point, rim light, volumetric, fog, mood, cinematic, horror lighting
-  related-skills: rendering, materials, realistic-style, horror-style
+  related-skills: rendering, materials
 ---
 
 # Lighting Artist
@@ -73,7 +73,7 @@ Horror: mix warm interior tungsten with cold exterior moonlight.
 
 ## Horror Lighting
 
-See horror-style skill. Key techniques:
+Key techniques:
 - High contrast; deep shadows
 - Single source motivation (one visible lamp)
 - Flicker via noise modifier on strength

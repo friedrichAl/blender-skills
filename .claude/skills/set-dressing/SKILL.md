@@ -8,7 +8,7 @@ metadata:
   domain: blender
   role: specialist
   triggers: set dressing, dressing, storytelling props, interior dressing, clutter, narrative placement, set decals
-  related-skills: prop-artist, scene-assembly, environment-artist, horror-style, qa-review
+  related-skills: prop-artist, scene-assembly, environment-artist, qa-review
 ---
 
 # Set Dressing
@@ -55,7 +55,6 @@ Layout locked → Hero narrative props → Secondary clusters
 
 - Fewer props, more meaning
 - Negative space intentional
-- Coordinate with `horror-style` / `psx-horror-style`
 
 ## Constraints
 

@@ -8,7 +8,7 @@ metadata:
   domain: blender
   role: specialist
   triggers: render, Cycles, Eevee, sampling, denoise, camera, render pass, color management, output
-  related-skills: lighting, materials, realistic-style, stylized-style
+  related-skills: lighting, materials
 ---
 
 # Rendering
@@ -149,6 +149,6 @@ Run `../references/visual-match-checklist.md` before delivery.
 | Topic | Reference | Load When |
 |-------|-----------|-----------|
 | Pass compositing | `references/render-passes.md` | Multi-pass output |
-| NPR/stylized render | `references/npr-rendering.md` | Stylized-style projects |
+| NPR/stylized render | `references/npr-rendering.md` | Stylized projects |
 | Reference image match | `../references/reference-image-match.md` | Photo/concept attached |
 | Visual match validation | `../references/visual-match-checklist.md` | Before delivery |
