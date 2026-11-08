@@ -26,7 +26,7 @@ A 15-year veteran Technical Art Director who has shipped AAA games on PC, consol
 - Multi-discipline tasks spanning modeling, UVs, materials, rigging, export
 - Ambiguous requests needing workflow analysis
 - Production planning, polycount targets, export format decisions
-- Coordinating style direction (horror, lowpoly, stylized, realistic)
+- Setting art direction in the brief (horror, lowpoly, stylized, realistic)
 - **Reference image / photo match** — user attaches image and wants similar result
 
 ## Core Philosophy
@@ -56,7 +56,7 @@ Before any work, determine:
 | Asset purpose | Hero / Standard / Background | Polycount, texture res |
 | Target | Game / Cinematic / Portfolio | Optimization level |
 | Platform | Mobile / Console / PC | Budget constraints |
-| Style | Horror / Lowpoly / Stylized / Realistic | Style skill activation |
+| Style | Horror / Lowpoly / Stylized / Realistic | Materials, lighting, lookdev direction |
 | Animation | Static / Rigged / Animated | Retopo, rigging, animation skills |
 | Export | FBX / GLTF / USD / Alembic | Export-pipeline config |
 
@@ -80,7 +80,7 @@ Before any work, determine:
 | Baking, normal maps, atlases | texture-workflow | uv-workflow, materials |
 | Lookdev / shading review loop | lookdev | materials, lighting, camera-cinematography, qa-review |
 | Scatter, procedural systems | geometry-nodes | procedural-modeling, environment-artist |
-| Mood, cinematic lighting | lighting | rendering, lookdev, horror-style |
+| Mood, cinematic lighting | lighting | rendering, lookdev |
 | Camera, lenses, framing, camera moves | camera-cinematography | rendering, lighting, animation, compositing |
 | Final renders, passes | rendering | lighting, materials, compositing |
 | Compositor, grade, beauty stack | compositing | rendering, lookdev, vfx-fx |
@@ -91,70 +91,12 @@ Before any work, determine:
 | Rocks, roads, cables, buildings (procedural) | procedural-modeling | geometry-nodes |
 | Large scene layout, linking, overrides | scene-assembly | environment-artist, set-dressing, lighting |
 | Prop placement, narrative clutter | set-dressing | prop-artist, scene-assembly, environment-artist |
-| Archviz interiors/exteriors | archviz | materials, lighting, camera-cinematography, rendering |
 | Polycount, cleanup | asset-optimization | lod-pipeline, export-pipeline, qa-review |
-| LOD generation / validation | lod-pipeline | asset-optimization, unity-export, unreal-export |
-| UCX / convex / collider proxies | collision-proxy | lod-pipeline, unreal-export, unity-export, physics-sim |
-| Generic FBX/GLTF/USD export | export-pipeline | asset-optimization, qa-review |
-| Unity-specific export | unity-export | export-pipeline, lod-pipeline, collision-proxy |
-| Unreal-specific export | unreal-export | export-pipeline, lod-pipeline, collision-proxy |
-| Godot-specific export | godot-export | export-pipeline, lod-pipeline, collision-proxy |
+| LOD generation / validation | lod-pipeline | asset-optimization, export-pipeline |
+| UCX / convex / collider proxies | collision-proxy | lod-pipeline, export-pipeline, physics-sim |
+| FBX/GLTF/USD export, Unity/Unreal/Godot | export-pipeline | asset-optimization, qa-review |
 | QA gate, screenshot review, ship check | qa-review | asset-optimization, lookdev, blender-director |
-| Psychological horror aesthetic | horror-style | lighting, environment-artist, set-dressing |
-| Cosmic / Lovecraftian / eldritch | cosmic-eldritch-horror | horror-style, creature-artist, vfx-fx |
-| Body horror / mutation | body-horror-style | horror-style, creature-artist, sculpting |
-| Analog / VHS / found footage | analog-found-footage-horror | compositing, camera-cinematography, horror-style |
-| Liminal / Backrooms / empty mall | liminal-space-style | environment-artist, horror-style, lighting |
-| Folk horror / rural ritual | folk-horror-style | horror-style, vegetation-artist, set-dressing |
-| Mascot / puppet horror | mascot-puppet-horror | horror-style, stop-motion-craft-style, character-artist |
-| Dreamcore / weirdcore | dream-weirdcore-style | liminal-space-style, compositing |
-| Indie horror refs (SH / FtF / Puppet Combo) | indie-horror-aesthetics | horror-style, psx-horror-style, lighting |
-| PSX/PS1 horror crunch | psx-horror-style | horror-style, lowpoly-style, lighting, compositing |
-| PS1/PS2, Lethal Company style | lowpoly-style | environment-artist, materials, visual-console-eras |
-| Anime / cel / hard color breaks | anime-style | stylized-style, materials, rendering, character-artist |
-| Manga value / screentone language | manga-style | anime-style, comic-book-style, compositing |
-| Cartoon graphic shapes | cartoon-style | stylized-style, character-artist |
-| Comic book / ink / halftone | comic-book-style | stylized-style, compositing |
-| Pixel / texel-locked | pixel-art-style | retro-8bit-style, retro-16bit-style, hd-2d-style |
-| HD-2D hybrid | hd-2d-style | pixel-art-style, environment-artist, lighting |
-| Hand-painted textures | hand-painted-style | stylized-style, texture-workflow |
-| Watercolor / oil painterly | painterly-style | hand-painted-style, compositing |
-| Claymation / paper craft / stop-mo | stop-motion-craft-style | materials, character-artist |
-| Chibi / SD proportions | chibi-style | anime-style, cartoon-style, character-artist |
-| Noir / neo-noir | noir-style | lighting, camera-cinematography, compositing |
-| Minimalist / abstract reduce | minimalist-style | stylized-style, lookdev |
-| Vector-flat graphic | vector-style | minimalist-style, cartoon-style |
-| Voxel / Minecraft-adjacent | voxel-style | lowpoly-style, environment-artist, geometry-nodes |
-| Isometric / strategy / diorama | isometric-style | camera-cinematography, environment-artist, genre-strategy-sim |
-| Frutiger Aero glossy 2000s | frutiger-aero-style | materials, lookdev, neon-retrofuturism |
-| Neon / vaporwave / synthwave | neon-retrofuturism | sci-fi-punk-worlds, lighting, compositing |
-| Cozy / cute / wholesome | cozy-wholesome-mood | stylized-style, lighting, set-dressing |
-| Dark / gritty / decayed / industrial | dark-gritty-mood | horror-style, materials, environment-artist |
-| Dreamlike / surreal / mystical | dream-surreal-mood | dream-weirdcore-style, lighting, vfx-fx |
-| Brutalist concrete mood | brutalist-mood | archviz, environment-artist, materials |
-| Fantasy / medieval / dark fantasy | fantasy-worlds | environment-artist, prop-artist, creature-artist |
-| Sci-fi / cyberpunk / steampunk / punks | sci-fi-punk-worlds | hard-surface, environment-artist, vehicle-artist |
-| Historical / western / samurai / WW | historical-worlds | environment-artist, prop-artist, character-artist |
-| Post-apoc / dystopia / zombie | apocalypse-worlds | environment-artist, prop-artist, vehicle-artist |
-| Underwater / desert / arctic / jungle | biome-worlds | environment-artist, vegetation-artist, lighting |
-| Character race/role archetypes | character-archetypes | character-artist, creature-artist |
-| PS1–PS5 / CRT / VHS / DOS eras | visual-console-eras | lowpoly-style, compositing, realistic-style |
-| Action / brawler / fighting arenas | genre-action-combat | environment-artist, vfx-fx |
-| FPS / TPS / BR / extraction | genre-shooter | environment-artist, hard-surface, collision-proxy |
-| RPG / JRPG / CRPG / ARPG / MMO | genre-rpg | fantasy-worlds, environment-artist, character-artist |
-| Survival / survival-horror gameplay | genre-survival | environment-artist, prop-artist, horror-style |
-| Stealth spaces | genre-stealth | environment-artist, lighting |
-| Puzzle / platformer | genre-puzzle-platformer | environment-artist, prop-artist |
-| Metroidvania / roguelike / roguelite | genre-metroidvania-roguelike | environment-artist, scene-assembly |
-| Soulslike monumental dread | genre-soulslike | dark-gritty-mood, fantasy-worlds, lighting |
-| Strategy / sim / city / colony / MOBA | genre-strategy-sim | isometric-style, environment-artist |
-| Racing / sports | genre-racing-sports | vehicle-artist, environment-artist |
-| VN / walking sim / interactive movie | genre-narrative-vn | camera-cinematography, lighting, set-dressing |
-| Card / party / idle / rhythm / edu | genre-card-party-idle | prop-artist, camera-cinematography |
-| Open world / sandbox | genre-open-world-sandbox | biome-worlds, environment-artist, lod-pipeline |
-| Exaggerated, NPR, hand-painted broad | stylized-style | materials, rendering, anime-style |
-| Photoreal, scan cleanup, AAA PBR | realistic-style | texture-workflow, rendering, lookdev |
-| **Reference photo / concept art attached** | **reference-image-match** | blender-director → discipline skill → style → materials → lighting → rendering |
+| **Reference photo / concept art attached** | **reference-image-match** (reference doc) | blender-director → discipline skill → materials → lighting → rendering |
 
 ## Reference Image Workflow (Mandatory)
 
@@ -223,7 +165,7 @@ blender-director → prop-artist → uv-workflow → materials → lookdev → a
 
 ### Vehicle (Game)
 ```
-blender-director → vehicle-artist → lod-pipeline → collision-proxy → materials → unreal-export|unity-export
+blender-director → vehicle-artist → lod-pipeline → collision-proxy → materials → export-pipeline
 ```
 
 ### Environment Modular Kit
@@ -235,16 +177,6 @@ blender-director → environment-artist → geometry-nodes → uv-workflow → a
 ```
 blender-director → character-artist → sculpting → retopology → hair-groom → cloth-sim
   → uv-workflow → materials → rigging → animation → export-pipeline
-```
-
-### Horror Scene
-```
-blender-director → horror-style → environment-artist → set-dressing → lighting → asset-optimization → export-pipeline
-```
-
-### PSX Horror Scene
-```
-blender-director → psx-horror-style → environment-artist → lowpoly-style → lighting → compositing
 ```
 
 ### Procedural Scatter System
@@ -259,7 +191,7 @@ blender-director → [discipline] → lookdev → camera-cinematography → ligh
 
 ### Engine Delivery
 ```
-blender-director → asset-optimization → lod-pipeline → collision-proxy → unity-export|unreal-export|godot-export → qa-review
+blender-director → asset-optimization → lod-pipeline → collision-proxy → export-pipeline → qa-review
 ```
 
 ## MCP Integration
@@ -276,7 +208,7 @@ blender-director → asset-optimization → lod-pipeline → collision-proxy →
 - Output production brief before modeling
 - **If reference image attached:** complete Reference Analysis and camera match before geometry detail
 - **Screenshot compare** after materials, lighting, and each refinement pass
-- Activate appropriate style skill for art direction
+- State art direction explicitly in the brief
 - Set polycount/texture budgets explicitly
 - Organize collections with `COL_` prefix from start
 - Validate before declaring complete
@@ -322,15 +254,8 @@ User attached photo / concept / "match this"?
 ### New Asset Request
 ```
 Is style specified?
-├── Horror → horror-style (+ psx-horror-style if PS1 crunch)
-├── Lowpoly → lowpoly-style + relevant modeling skill
-├── Anime/cel → anime-style + relevant modeling skill
-├── Voxel → voxel-style + relevant modeling skill
-├── Isometric → isometric-style + camera-cinematography
-├── Stylized → stylized-style + relevant modeling skill
-├── Realistic → realistic-style + relevant modeling skill
-├── Archviz → archviz + lookdev
-└── Unspecified → Ask or infer from context
+├── Yes → record it in the brief; carry it through materials, lighting, lookdev
+└── No  → Ask or infer from context
 
 What is the asset?
 ├── Vehicle / mech → vehicle-artist
@@ -343,10 +268,7 @@ What is the asset?
 └── FX / sim → vfx-fx / physics-sim / cloth-sim
 
 Engine delivery?
-├── Unity → unity-export
-├── Unreal → unreal-export
-├── Godot → godot-export
-└── Generic → export-pipeline
+└── Any (Unity / Unreal / Godot / generic) → export-pipeline
 
 Does it need animation?
 ├── Yes → Add retopology, rigging, animation
@@ -355,4 +277,4 @@ Does it need animation?
 
 ## Knowledge Reference
 
-AAA, Blender, MCP, game-ready, technical art, pipeline, production brief, hard surface, prop artist, vehicle artist, environment art, character art, creature art, vegetation, set dressing, hair groom, cloth sim, VFX, physics, camera cinematography, compositing, lookdev, archviz, sculpting, retopology, UV unwrapping, PBR materials, texture baking, geometry nodes, procedural modeling, lighting, Cycles, Eevee, AgX, animation, rigging, LOD, collision proxy, scene assembly, QA review, export, FBX, GLTF, USD, Unity, Unreal, Godot, horror, PSX horror, lowpoly, anime, voxel, isometric, stylized, realistic, reference image match, photo match, silhouette, panel breaks, greebles, blender-mcp, COL_, SM_, MAT_, LGT_, CAM_, ARM_, AN_, UCX_
+AAA, Blender, MCP, game-ready, technical art, pipeline, production brief, hard surface, prop artist, vehicle artist, environment art, character art, creature art, vegetation, set dressing, hair groom, cloth sim, VFX, physics, camera cinematography, compositing, lookdev, sculpting, retopology, UV unwrapping, PBR materials, texture baking, geometry nodes, procedural modeling, lighting, Cycles, Eevee, AgX, animation, rigging, LOD, collision proxy, scene assembly, QA review, export, FBX, GLTF, USD, Unity, Unreal, Godot, reference image match, photo match, silhouette, panel breaks, greebles, blender-mcp, COL_, SM_, MAT_, LGT_, CAM_, ARM_, AN_, UCX_
