@@ -42,7 +42,7 @@ Naming: `AN_[Char]_[Action]_[Variant]`
 
 ## Animation Principles (Applied)
 
-1. **Timing** — Weight through spacing
+1. **Timing** — Weight through spacing. To make a pickup read heavy, spend the extra frames on the grip and strain *before* the lift (~3–4× the light version: ~45–55 vs ~12 frames at 30fps), keep the lift itself short (3–6 frames), and key the fingers about every 2 frames through the grip
 2. **Arcs** — Natural limb paths
 3. **Overlap** — Secondary motion offset
 4. **Anticipation** — Wind-up before action
