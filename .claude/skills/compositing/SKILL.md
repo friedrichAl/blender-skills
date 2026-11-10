@@ -65,6 +65,8 @@ Combined
 - Optional: `OUT_Alpha`, `OUT_CryptoID`
 - Prefer EXR for archival; PNG/JPEG for review
 
+**Blender 5.3** (release notes, not measured here): the compositor is an **effects stack** in Properties › Compositor; a new tree starts as Group Input → Group Output with **no Render Layers node** (add one for passes), the Group Output acts as viewer when there is no Viewer node, rendering no longer writes viewer images, and File Output's default name is `{blend_name}`. Built-in Bloom asset. In the Node Editor **Ctrl+X now cuts**; Dissolve moved to Shift+X.
+
 ## Constraints
 
 ### MUST DO

@@ -76,6 +76,11 @@ Naming: `AN_[Char]_[Action]_[Variant]`
 5. Scale: 1.0; no NLA time remapping unless intentional
 ```
 
+**Blender 5.3** (measured on the 5.3.0 RC, 2026-11-10):
+- **Ctrl+R in Pose mode** converts rotation modes and the keyed animation with them (`anim.rotation_mode_convert`). Use **Bake** (`bake=True`): without it only the existing keys are converted and the motion between them changed by 9–49° in tests. Baked, every frame matches (every frame becomes a key).
+- **World Space Animation Copy / Paste** in the sidebar Animation tab (`anim.world_space_copy` / `anim.world_space_paste`) moves motion between objects or bones with different parents without a Child Of + bake. Not yet onto constrained bones.
+- **Replace with Duplicate Action** (Action Editor › Action) gives every user of a shared action its own copy. Paste Pose (Ctrl+V) has an influence Factor in the redo panel.
+
 ## Camera Animation
 
 - Smooth Bezier interpolation always

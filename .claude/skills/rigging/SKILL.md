@@ -79,6 +79,8 @@ Standard: IK legs, FK spine; switchable arms for game characters.
 5. Gradient weights at joints — no hard 1.0/0.0 at bend center
 ```
 
+**Blender 5.3** (measured on the 5.3.0 RC, 2026-11-10): Weight Paint now starts with Auto-Normalize and Multi-Paint **on** (off in 5.2), so a stroke rebalances the other groups; turn Auto-Normalize off for a one-sided fix. (Mesh › Mirror Vertex Groups was already on for new meshes in 5.2; only the startup Cube changed.) The default brush is "Add Weight" and "Paint" is renamed "Set Weight". New Weight Paint automasking (Topology, Mesh Boundary, Cavity, View/Area Normal) keeps a stroke on one limb. For game rigs from Rigify, set the spine and head rig types' **B-Bone Segments to 1** before generating (`rigify_parameters.spine_bbones = 1`): B-bones don't export, so they show bending the engine never gets.
+
 ## Mechanical Rigs
 
 - Empty objects as control handles

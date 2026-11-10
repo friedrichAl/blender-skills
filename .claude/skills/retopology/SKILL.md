@@ -48,6 +48,7 @@ High-Poly Reference → Guide Setup → Block Retopo → Loop Refinement
 - Maintain even edge length in deformation zones
 - Redirect loops at poles (minimum 3 edges meeting)
 - Hide poles at back of head, armpits, groin
+- Even out a wobbly loop with **Relax Edge Loops** (built in since Blender 5.3, the LoopTools Relax port; also Curve and Gstretch). LoopTools Space and Circle are still the add-on. In 5.3, Space Edge Loops Evenly refuses a selection that contains faces: select the loops, not the region.
 
 ## Pole Management
 
